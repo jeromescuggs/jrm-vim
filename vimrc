@@ -126,9 +126,10 @@ else
     set termguicolors
 endif
 
-" if has ('nvim')
+if has ('nvim')
     " luafile /home/jerome/.config/nvim/lua/init.lua
-" endif
+    lua require("nvim-tree").setup()
+endif
 
 " if the comfortable-motion plugin is loaded, set up my defaults
 if has_key(plugs, 'comfortable-motion.vim')   
